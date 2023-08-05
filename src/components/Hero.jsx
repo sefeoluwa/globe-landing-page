@@ -15,7 +15,7 @@ function Hero() {
         <div className="start pl-[2.5vw] mt-10 flex">
           <button className='w-[211px] h-[50px] bg-[#5454D4] text-white rounded-xl text-[17px]'>Get Started</button>
 
-          <img src={downArrow} alt="" />
+          <img src={downArrow} alt="navigate to buttom" className='ml-[35px] pb-3 cursor-pointer w-[50px] h-[60px]'/>
           
         </div>
 
