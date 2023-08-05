@@ -1,10 +1,16 @@
-
+import { Hero, Logos, Metrics, Navbar, Services, SubIndex, SubPlans } from "./components"
 
 function App() {
   
   return (
     <>
-    <div className=""> Globe</div>
+   <Navbar />
+   <Hero />
+   <Logos />
+   <SubIndex />
+   <Metrics />
+   <Services />
+   <SubPlans />
     </>
   )
 }
