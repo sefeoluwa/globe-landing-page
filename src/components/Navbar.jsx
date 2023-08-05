@@ -30,7 +30,7 @@ function Navbar() {
     onHoverStart={handleHover}
     onHoverEnd={() => controls.start({ x: 0 })}
     animate={controls}
-    className="w-[211px] h-[50px] bg-[#FF7143] text-white rounded-xl">Get Started</motion.button>
+    className="w-[211px] h-[50px] bg-[#FF7143] text-white rounded-xl text-[17px]">Get Started</motion.button>
     </div>
    </nav>
    </>
