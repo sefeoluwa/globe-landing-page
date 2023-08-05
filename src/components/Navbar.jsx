@@ -1,12 +1,21 @@
-import { Logo } from "../assets"
+import { logo } from "../assets"
 
 function Navbar() {
   return (
    <>
-   <nav>
+   <nav className="flex navbar w-[28.4cm]">
     <div className="">
-      <img src={Logo} alt="Logo for page" />
+      <img src={logo} alt="Logo for page" className=""/>
     </div>
+
+    <ul className="flex justify-around w-[8.6cm]">
+    <li>Home</li>
+    <li>Features</li>
+    <li>Pricing</li>
+    <li>Blog</li>
+    </ul>
+
+    <button className="">Get Started</button>
    </nav>
    </>
 
