@@ -1,6 +1,16 @@
 import { logo } from "../assets"
+import { motion, useAnimation } from "framer-motion";
+
 
 function Navbar() {
+
+    const controls = useAnimation();
+  
+    const handleHover = () => {
+      controls.start({ x: [0, -5, 5, -5, 0], transition: { duration: 0.7 } });
+    };
+  
+
   return (
    <>
    <nav className="flex justify-center pt-5 " >
@@ -16,7 +26,11 @@ function Navbar() {
     <li>Blog</li>
     </ul>
 
-    <button className="">Get Started</button>
+    <motion.button 
+    onHoverStart={handleHover}
+    onHoverEnd={() => controls.start({ x: 0 })}
+    animate={controls}
+    className="w-[211px] h-[50px] bg-[#FF7143] text-white rounded-xl">Get Started</motion.button>
     </div>
    </nav>
    </>
