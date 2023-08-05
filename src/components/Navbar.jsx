@@ -1,8 +1,15 @@
-import React from 'react'
+import { Logo } from "../assets"
 
 function Navbar() {
   return (
-    <div>Navbar</div>
+   <>
+   <nav>
+    <div className="">
+      <img src={Logo} alt="Logo for page" />
+    </div>
+   </nav>
+   </>
+
   )
 }
 
