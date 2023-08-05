@@ -1,6 +1,7 @@
 import React from 'react'
 import { SectionWrapper } from "../hoc"
-import { FaArrowDown } from "react-icons/fa";
+import { downArrow }from "../assets"
+
 
 function Hero() {
   return (
@@ -13,7 +14,9 @@ function Hero() {
 
         <div className="start pl-[2.5vw] mt-10 flex">
           <button className='w-[211px] h-[50px] bg-[#5454D4] text-white rounded-xl text-[17px]'>Get Started</button>
-          <FaArrowDown className='rounded-full border-solid border-grey border-2'/>
+
+          <img src={downArrow} alt="" />
+          
         </div>
 
       </div>
