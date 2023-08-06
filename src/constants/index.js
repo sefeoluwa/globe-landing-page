@@ -6,7 +6,7 @@ import {
     logo5, 
 } from "../assets"
 
-const Logos = [
+const Icons = [
     {
         name: "logo1",
         icon: logo1,
@@ -29,4 +29,4 @@ const Logos = [
       },
 ]
 
-export default Logos
+export default Icons
