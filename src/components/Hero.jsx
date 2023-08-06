@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionWrapper } from "../hoc"
-import { downArrow }from "../assets"
+import { downArrow, earth_light }from "../assets"
 
 
 
@@ -21,8 +21,8 @@ function Hero() {
         </div>
 
       </div>
-      <div className="light-earth w-[40vw] h-[40vh]">
-    
+      <div className="light-earth  w-[70vw] ">
+      <img src={earth_light} alt="" className='w-[70vw] h-[70vh] pr-[-9vw] mt-[-12vh]'/>
       </div>
      
    </div>
