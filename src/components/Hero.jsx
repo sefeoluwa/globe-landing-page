@@ -3,10 +3,11 @@ import { SectionWrapper } from "../hoc"
 import { downArrow }from "../assets"
 
 
+
 function Hero() {
   return (
     <>
-   <div className="hero mt-20">
+   <div className="hero mt-20 flex">
       <div className="hero-left w-[459px] h-[461px]">
 
         <h1 className='text-[80px] w-[12.2cm] h-[231px] leading-[77px] pl-[2.5vw] font-bold'>Grow your subscription business</h1>
@@ -20,6 +21,10 @@ function Hero() {
         </div>
 
       </div>
+      <div className="light-earth w-[40vw] h-[40vh]">
+    
+      </div>
+     
    </div>
     </>
   )

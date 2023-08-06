@@ -1,5 +1,5 @@
-import earth_dark from "./earth_dark.png"
-import earth_light from "./earth_light.png"
+import earth_dark from "./earth_dark.svg"
+import earth_light from "./earth_light.svg"
 import icon1 from "./icon1.png"
 import icon2 from "./icon2.png"
 import icon3 from "./icon3.png"
