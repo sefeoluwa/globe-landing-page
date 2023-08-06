@@ -7,8 +7,8 @@ import { downArrow, earth_light }from "../assets"
 function Hero() {
   return (
     <>
-   <div className="hero mt-20 flex w-[100vw]">
-      <div className="hero-left w-[459px] h-[461px] mt-5 ml-[-6vw]">
+   <div className="hero mt-20 flex w-[80vw] pl-[3vw]">
+      <div className="hero-left w-[459px] h-[461px] mt-5 ml-[-4vw]">
 
         <h1 className='text-[80px] w-[12.2cm] h-[231px] leading-[77px] pl-[2.5vw] font-bold'>Grow your subscription business</h1>
         <p className='pl-[2.5vw] text-[#696871] text-[20px] leading-[30px] tracking-[-0.63px] mt-10'>Outcome centered products that reduce churn, optimize pricing, and grow subscription business end-to-end.</p>
@@ -21,8 +21,8 @@ function Hero() {
         </div>
 
       </div>
-      <div className="light-earth  w-[70vw] ">
-      <img src={earth_light} alt="" className='w-[70vw] h-[70vh] pr-[-9vw] mt-[-12vh]'/>
+      <div className="light-earth  w-[70vw] overflow-hidden">
+      <img src={earth_light} alt="" className='w-[70vw] h-[70vh] mt-[-12vh]'/>
       </div>
      
    </div>
