@@ -1,9 +1,16 @@
-import React from 'react'
+import  Icons  from "../constants"
+import { SectionWrapper } from "../hoc"
 
 function Logos() {
   return (
-    <div>Logos</div>
+    <>
+    <div className="flex justify-between">
+    {Icons.map((icons) => (
+      <img src={icons.icon} key={icons.name} alt="" />
+    ) )}
+    </div>
+    </>
   )
 }
 
-export default Logos
+export default SectionWrapper(Logos, '')
