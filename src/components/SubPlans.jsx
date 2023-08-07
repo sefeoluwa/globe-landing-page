@@ -20,7 +20,9 @@ function SubPlans() {
             <p>{plan.title}</p>
             <h3>{plan.price}</h3>
             <ul className='flex flex-col'>
-              <li className=''>{plan.specs}</li>
+            {plan.specs.map((spec) => ( 
+            <li key={spec}>{spec}</li>
+          ))}
             </ul>
             <button>{plan.button}</button>
           </div>
