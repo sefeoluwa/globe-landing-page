@@ -55,10 +55,43 @@ const services = [
 
 ]
 
+const plans = [
+  {
+    title: "Starter",
+    price: "Free",
+    specs: [
+      "1 Website",
+      "5 GB Hosting",
+      "Limited Support",
+    ], 
+    button: "Get Started",
+  },
+  {
+    title: "Premium",
+    price: "$29/month",
+    specs: [
+      "10 Website",
+      "15 GB Hosting",
+      "Premium Support",
+    ], 
+    button: "Get Started",
+  },
+  {
+    title: "Enterprise",
+    price: "$49/month",
+    specs: [
+      "Unlimited Website",
+      "50 GB Hosting",
+      "Premium Support",
+    ], 
+    button:"Get Started",
+  }
+]
+
 
 
 export {
   Icons,
   services,
-
+  plans,
 }
