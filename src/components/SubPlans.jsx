@@ -5,11 +5,11 @@ import { plans } from "../constants"
 function SubPlans() {
   return (
     <>
-    <div className="top flex justify-between">
-      <h2>Get the right plan for future product.</h2>
-      <div className="buttons">
-        <button>Yearly</button>
-        <button>Monthly</button>
+    <div className="top flex justify-between items-end mb-[7vh] mt-[4vh]">
+      <h2 className='w-[523px] h-[140px] font-bold text-[60px] leading-[70px] tracking-[-1.88px]'>Get the right plan for future product.</h2>
+      <div className="buttons pb-[14px]">
+        <button className='text-center bg-[#5454D4] w-[160px] h-[55px] text-white'>Yearly</button>
+        <button className='text-center w-[160px] h-[55px] bg-[#F7F7FB]'>Monthly</button>
       </div>
     </div>
 
