@@ -5,7 +5,7 @@ import { SectionWrapper } from "../hoc"
 
 function SubIndex() {
   return (
-    <div className="flex">
+    <div className="flex justify-center items-center w-full">
       <img src={earth_dark} alt= "Dark colored globe image" />
 
       <div className="">
