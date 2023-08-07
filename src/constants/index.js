@@ -38,7 +38,7 @@ const services = [
     name: "benchmarks",
     icon: icon1,
     header: "Benchmarks",
-    para: "See how you stack u against comparable companies in similar stages."
+    para: "See how you stack up against comparable companies in similar stages."
   },
   {
     name: "pricing",

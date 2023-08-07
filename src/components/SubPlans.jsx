@@ -1,4 +1,5 @@
 import React from 'react'
+import { SectionWrapper } from "../hoc"
 
 function SubPlans() {
   return (
@@ -6,4 +7,4 @@ function SubPlans() {
   )
 }
 
-export default SubPlans
+export default SectionWrapper(SubPlans, '')
