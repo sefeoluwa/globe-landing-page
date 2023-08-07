@@ -21,7 +21,7 @@ function Hero() {
         </div>
 
       </div>
-      <div className="light-earth  w-[70vw] overflow-hidden">
+      <div className="light-earth  w-[70vw] overflow-hidden ml-[-4vw]">
       <img src={earth_light} alt="" className='w-[70vw] h-[70vh] mt-[-12vh]'/>
       </div>
      
