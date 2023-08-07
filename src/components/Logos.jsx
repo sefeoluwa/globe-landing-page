@@ -1,4 +1,5 @@
-import  Icons  from "../constants"
+/* eslint-disable react-refresh/only-export-components */
+import { Icons } from "../constants"
 import { SectionWrapper } from "../hoc"
 
 function Logos() {
@@ -7,7 +8,7 @@ function Logos() {
     <div className="flex justify-between">
     {Icons.map((icons) => (
       <img src={icons.icon} key={icons.name} alt="" />
-    ) )}
+    ))}
     </div>
     </>
   )
