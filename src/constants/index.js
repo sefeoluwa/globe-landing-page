@@ -1,4 +1,7 @@
 import { 
+    icon1,
+    icon2,
+    icon3,
     logo1, 
     logo2, 
     logo3,
@@ -8,25 +11,48 @@ import {
 
 const Icons = [
     {
-        name: "logo1",
+        name: "first",
         icon: logo1,
       },
       {
-        name: "logo2",
+        name: "second",
         icon: logo2,
       },
       {
-        name: "logo3",
+        name: "third",
         icon: logo3,
       },
          {
-        name: "logo4",
+        name: "fourth",
         icon: logo4,
       },
       {
-        name: "logo5",
+        name: "fifth",
         icon: logo5,
       },
+];
+
+const services = [
+
+  {
+    name: "icon1",
+    icon: icon1,
+  },
+  {
+    name: "icon2",
+    icon: icon2,
+  },
+  {
+    name: "icon3",
+    icon: icon3,
+  },
+
 ]
 
-export default Icons
+
+
+export {
+  Icons,
+  services,
+
+}
