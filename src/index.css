@@ -104,4 +104,11 @@
     .metrics > p{
         width: 70vw;
     }
+
+    .services{
+        flex-direction: column;
+        height: auto;
+        margin-left: -2vw;
+        padding-right: 10vw;
+    }
 }
