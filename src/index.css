@@ -76,6 +76,7 @@
 
     .subIndex{
         flex-direction: column;
+        margin-left: 2vw;
     }
 
     .index-container{
@@ -90,5 +91,17 @@
     .index-container > p{
         width: 70vw;
     }
+
+    .metrics{
+        margin-left: 1vw;
+    }
+
+    .metrics > h2{
+        font-size: 45px;
+        margin-left: 5vw;
+    }
     
+    .metrics > p{
+        width: 70vw;
+    }
 }
