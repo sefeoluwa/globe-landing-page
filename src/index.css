@@ -47,4 +47,48 @@
     .nav-full{
         display:none;
     }
+
+    .hero{
+        flex-direction: column;
+        margin-bottom: -20vh;
+        margin-left: 4vw;
+    }
+
+    .hero-head{
+        font-size: 60px;
+    }
+
+    .hero-p{
+        font-size:18px;
+        width: 70vw;
+    }
+
+    .light_earth{
+        /* width: 100vw;
+        margin-left: 0; */
+        background-color: aqua;
+        margin-bottom: -5vh;
+    }
+
+    .light_earth > img{
+        width: 100%;
+    }
+
+    .subIndex{
+        flex-direction: column;
+    }
+
+    .index-container{
+        padding-left: 30vw;
+        margin-left: 10vw;
+    }
+
+    .index-container > h2{
+        font-size: 45px;
+    }
+
+    .index-container > p{
+        width: 70vw;
+    }
+    
 }
