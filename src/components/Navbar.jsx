@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <>
       {/* Desktop Navbar */}
-      <nav className=" nav-full md:flex justify-center pt-5">
+      <nav className=" nav-full md:flex justify-center pt-5 fixed z-10">
         <div className="nav-container flex justify-between w-[75%]">
           <div className="">
             <img src={logo} alt="Logo for page" className="" />
@@ -43,7 +43,7 @@ function Navbar() {
       </nav>
 
       {/* Mobile Navbar */}
-      <nav className="md:hidden flex justify-center pt-5">
+      <nav className="md:hidden flex justify-center pt-5 fixed z-10 w-[90vw] ">
         <div className="nav-container flex justify-between w-[75%]">
           <div className="">
             <img src={logo} alt="Logo for page" className="" />
@@ -65,18 +65,18 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden flex flex-col items-center mt-4">
-          <ul className="text-[15px]">
-            <li>Home</li>
-            <li>Features</li>
-            <li>Pricing</li>
-            <li>Blog</li>
+        <div className="md:hidden flex flex-col fixed bg-[#5454D4] text-white w-[55vw] ml-[35vw] mt-[10vh] h-[350px] items-end pr-[18vw] z-10 rounded-2xl pt-4">
+          <ul className="text-[20px] mr-[-25px] p-5">
+            <li className="mb-6">Home</li>
+            <li className="mb-6">Features</li>
+            <li className="mb-6">Pricing</li>
+            <li className="mb-6">Blog</li>
           </ul>
           <motion.button
             onHoverStart={handleHover}
             onHoverEnd={() => controls.start({ x: 0 })}
             animate={controls}
-            className="w-[211px] h-[50px] bg-[#FF7143] text-white rounded-xl text-[17px] mt-4"
+            className="w-[150px] h-[48px] bg-[#FF7143] text-white rounded-xl text-[14px] mt-4 mr-[-2.8em]"
           >
             Get Started
           </motion.button>
