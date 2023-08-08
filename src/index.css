@@ -13,3 +13,32 @@
     font-family: 'ABeeZee', sans-serif;
 }
 
+
+.plans > div {
+    border-radius: 12px;
+}
+
+.plans > div:nth-of-type(2){
+    background-color: #FF7143;
+    color: white;
+    height:473px;
+    margin-top: -1.5vh;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.plans > div:nth-of-type(2) > h3 {
+    color: #fff;
+}
+
+.plans > div:nth-of-type(2) > p{
+    color:#fff;
+}
+
+.plans > div:nth-of-type(2) > ul > li {
+    color:#fff;
+}
+
+.plans > div:nth-of-type(2) > button {
+    color:#fff;
+    background-color: #9F3919;
+}
