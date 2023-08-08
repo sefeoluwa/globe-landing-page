@@ -17,9 +17,9 @@ function Navbar() {
 
   return (
     <>
-      {/* Desktop Navbar */}
-      <nav className=" nav-full md:flex justify-center pt-5 fixed z-10">
-        <div className="nav-container flex justify-between w-[75%]">
+       {/* Desktop Navbar */}
+       <nav className="nav-full sticky top-0 flex md:flex justify-between pt-5 bg-white">
+        <div className="nav-container flex justify-between w-[75%] mx-auto">
           <div className="">
             <img src={logo} alt="Logo for page" className="" />
           </div>
@@ -41,6 +41,7 @@ function Navbar() {
           </motion.button>
         </div>
       </nav>
+
 
       {/* Mobile Navbar */}
       <nav className="md:hidden flex justify-center pt-5 fixed z-10 w-[90vw] ">
