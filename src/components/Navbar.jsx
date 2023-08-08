@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { logo, menu } from "../assets";
+import { logo, menu, close } from "../assets";
 import { motion, useAnimation } from "framer-motion";
 
 function Navbar() {
@@ -54,7 +54,11 @@ function Navbar() {
             onClick={handleMobileMenuToggle}
             className="w-[32px] h-[32px] p-2"
           >
-            <img src={menu} alt="Menu" />
+            {isMobileMenuOpen ? (
+              <img src={close} alt="Close" />
+            ) : (
+              <img src={menu} alt="Menu" />
+            )}
           </button>
         </div>
       </nav>
