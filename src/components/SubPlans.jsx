@@ -14,7 +14,7 @@ function SubPlans() {
     </div>
 
     <div className="bottom">
-      <div className='flex justify-evenly plans'>
+      <div className='flex justify-evenly plans flex-wrap'>
         {plans.map((plan) => (
           <div key={plan.title} className='w-[330px] h-[441px] bg-[#F7F7FB] p-[1vw]rounded-xl flex flex-col items-center pt-10'>
             <p className='text-[#696871] text[18px] leading-[28px] tracking-[-0.56px] pb-6'>{plan.title}</p>

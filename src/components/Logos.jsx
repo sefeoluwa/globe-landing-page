@@ -5,7 +5,7 @@ import { SectionWrapper } from "../hoc"
 function Logos() {
   return (
     <>
-    <div className="flex flex-wrap gap-10 justify-between">
+    <div className="logos flex flex-wrap gap-10 justify-between">
     {Icons.map((icons) => (
       <img src={icons.icon} key={icons.name} alt="" />
     ))}
