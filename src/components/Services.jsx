@@ -5,7 +5,7 @@ import { SectionWrapper } from "../hoc"
 
 function Services() {
   return (
-    <div className='flex justify-start items-end h-[50vh] '>
+    <div className='flex justify-start items-end h-[50vh] services '>
       {services.map((service) => (
         <div className="w-[60vw]  " key={service.name}>
           <img src={service.icon} alt=""/>
