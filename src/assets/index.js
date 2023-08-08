@@ -10,6 +10,8 @@ import logo4 from "./logo4.svg"
 import logo5 from "./logo5.svg"
 import logo from "./logo.svg"
 import downArrow from "./downArrow.png"
+import close from "./close.svg"
+import menu from "./menu.svg"
 
 export {
     earth_dark,
@@ -24,4 +26,6 @@ export {
     logo5,
     logo,
     downArrow,
+    menu, 
+    close,
 }
