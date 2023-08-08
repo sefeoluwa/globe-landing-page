@@ -1,11 +1,17 @@
 /* eslint-disable react-refresh/only-export-components */
+import { useEffect } from "react"
 import { Icons } from "../constants"
 import { SectionWrapper } from "../hoc"
+import AOS from "aos"
+import "aos/dist/aos.css"
 
 function Logos() {
+  useEffect (() => {
+    AOS.init({duration: 1500});
+}, []);
   return (
     <>
-    <div className="logos flex flex-wrap gap-10 justify-between">
+    <div data-aos="fade-right" className="logos flex flex-wrap gap-10 justify-between mt-5">
     {Icons.map((icons) => (
       <img src={icons.icon} key={icons.name} alt="" />
     ))}
