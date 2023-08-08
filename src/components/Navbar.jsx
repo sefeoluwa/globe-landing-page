@@ -52,14 +52,7 @@ function Navbar() {
       
     <AnimatePresence>
       <motion.aside 
-       initial={{ width: 0 }}
-       animate={{
-         width: 500
-       }}
-       exit={{
-         width: 0,
-         transition: { delay: 0.7, duration: 0.3 }
-       }}
+      
       className="md:hidden flex justify-center pt-5 fixed z-10 w-[90vw] ">
         <motion.div className="nav-container flex justify-between w-[75%]">
           <div className="">
@@ -72,18 +65,29 @@ function Navbar() {
             className="w-[32px] h-[32px] p-2"
           >
             {isMobileMenuOpen ? (
-              <img src={close} alt="Close" />
+              <img src={close} alt="Close"/>
             ) : (
               <img src={menu} alt="Menu" />
             )}
           </button>
         </motion.div>
-
-
       </motion.aside>
 
+     
+
       {/* Mobile Menu */}
+    
       {isMobileMenuOpen && (
+          <motion.aside
+          initial={{ width: 0 }}
+          animate={{
+            width: 500
+          }}
+          exit={{
+            width: 0,
+            transition: { delay: 0.7, duration: 0.3 }
+          }}
+         >
         <motion.div 
         initial="closed"
         animate="open"
@@ -97,15 +101,16 @@ function Navbar() {
             <motion.li variants={itemVariants} className="mb-6">Blog</motion.li>
           </ul>
           <motion.button
-            onHoverStart={handleHover}
-            onHoverEnd={() => controls.start({ x: 0 })}
-            animate={controls}
+            variants={itemVariants}
             className="w-[150px] h-[48px] bg-[#FF7143] text-white rounded-xl text-[14px] mt-4 mr-[-2.8em]"
           >
             Get Started
           </motion.button>
         </motion.div>
+        </motion.aside>
       )}
+      
+
 </AnimatePresence>
     </>
   );
