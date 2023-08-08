@@ -23,7 +23,7 @@ function Navbar() {
   return (
     <>
        {/* Desktop Navbar */}
-       <nav className="nav-full sticky top-0 flex md:flex justify-between pt-5 bg-white">
+       <nav className="nav-full sticky top-0 flex md:flex justify-between pt-5 z-10 h-5">
         <div className="nav-container flex justify-between w-[75%] mx-auto">
           <div className="">
             <img src={logo} alt="Logo for page" className="" />
