@@ -1,5 +1,6 @@
 import { logo } from "../assets"
 import { motion, useAnimation } from "framer-motion";
+import {navLinks } from "../constants"
 
 
 function Navbar() {
