@@ -88,10 +88,29 @@ const plans = [
   }
 ]
 
+const navLinks = [
+  {
+    id: "home",
+    title: "Home",
+  },
+  {
+    id: "features",
+    title: "Features",
+  },
+  {
+    id: "pricing",
+    title: "Pricing",
+  },
+  {
+    id: "blog",
+    title: "Blog",
+  },
+];
 
 
 export {
   Icons,
   services,
   plans,
+  navLinks,
 }
