@@ -3,6 +3,7 @@ import { SectionWrapper } from "../hoc"
 import { downArrow, earth_light }from "../assets"
 import { motion } from 'framer-motion'
 import { slideIn, textVariant, zoomIn } from '../../utils/motion'
+import Logos from './Logos'
 
 
 
@@ -28,8 +29,8 @@ function Hero() {
       variants={zoomIn('0.2', '1' )}
       src={earth_light} alt="" className='w-[70vw]  h-[70vh] mt-[-12vh]'/>
       </div>
-     
    </section>
+   <Logos />
     </>
   )
 }
