@@ -1,12 +1,12 @@
 /* eslint-disable react-refresh/only-export-components */
 /* eslint-disable react/no-unescaped-entities */
-import { useEffect } from "react"
 import { earth_dark } from "../assets"
 import { SectionWrapper } from "../hoc"
 import { zoomIn } from "../../utils/motion"
 import { motion } from "framer-motion"
 import AOS from "aos"
 import "aos/dist/aos.css"
+import { useEffect } from "react"
 
 function SubIndex() {
 
