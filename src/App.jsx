@@ -1,4 +1,4 @@
-import { Hero, Logos, Metrics, Navbar, Services, SubIndex, SubPlans } from "./components"
+import { Hero, Metrics, Navbar, Services, SubIndex, SubPlans } from "./components"
 
 function App() {
   
@@ -6,7 +6,6 @@ function App() {
     <>
    <Navbar />
    <Hero />
-   <Logos />
    <SubIndex />
    <Metrics />
    <Services />
