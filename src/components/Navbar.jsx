@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { logo, menu, close } from "../assets";
 import { AnimatePresence, motion, useAnimation } from "framer-motion";
-import { sideVariants, itemVariants } from "/home/user/repos/globe-landing-page/utils/motion.js"
-
+import { sideVariants, itemVariants } from '../../utils/motion'
 
 function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
