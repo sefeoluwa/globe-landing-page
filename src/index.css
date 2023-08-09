@@ -86,12 +86,12 @@
 
     .index-container > h2{
         font-size: 45px;
-        width: 88vw;
+        max-width: 75vw;
     }
 
     .index-container > p{
-        width: 80vw;
-        padding-left: 40px;
+        width: 70vw;
+        padding-left:
         
     }
 
