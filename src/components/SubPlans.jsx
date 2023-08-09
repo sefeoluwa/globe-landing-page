@@ -4,6 +4,7 @@ import { plans } from "../constants"
 import "aos/dist/aos.css"
 import AOS from 'aos'
 import { useEffect } from "react"
+import { motion, useAnimation } from 'framer-motion'
 
 
 
@@ -12,6 +13,13 @@ function SubPlans() {
 useEffect (() => {
   AOS.init({duration: 1500});
 }, []);
+
+const controls = useAnimation();
+
+  const handleHover = () => {
+    controls.start({ x: [0, -5, 5, -5, 0], transition: { duration: 0.7 } });
+  };
+
   return (
     <>
     <div 
@@ -22,8 +30,14 @@ useEffect (() => {
     >
       <h2 className='w-[523px] h-[140px] font-bold text-[60px] leading-[70px] tracking-[-1.88px]'>Get the right plan for future product.</h2>
       <div className="buttons pb-[14px]">
-        <button className='text-center bg-[#5454D4] w-[160px] h-[55px] text-white'>Yearly</button>
-        <button className='text-center w-[160px] h-[55px] bg-[#F7F7FB]'>Monthly</button>
+        <button className='text-center bg-[#5454D4] w-[160px] h-[55px] text-white'
+        >Yearly</button>
+        <motion.button 
+        onHoverStart={handleHover}
+        onHoverEnd={() => controls.start({ x: 0 })}
+        animate={controls}
+        className='text-center w-[160px] h-[55px] bg-[#F7F7FB]'
+        >Monthly</motion.button>
       </div>
     </div>
 
