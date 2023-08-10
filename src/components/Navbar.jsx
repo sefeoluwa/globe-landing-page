@@ -49,31 +49,31 @@ function Navbar() {
 
       {/* Mobile Navbar */}
       
-    <AnimatePresence>
-     
+    
+      <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] ">
         <div className="nav-container pt-5 flex justify-between w-[90%]">
-          <div className="">
-            <img src={logo} alt="Logo for page" className="" />
-          </div>
+            <div className="">
+              <img src={logo} alt="Logo for page" className="" />
+            </div>
 
-          {/* Mobile menu button (hamburger) */}
-          <div
-            onClick={handleMobileMenuToggle}
-           
-          >
-            {isMobileMenuOpen ? (
-              <img src={close} alt="Close"  className="w-[50px] h-[45px] p-2 cursor-pointer"/>
-            ) : (
-              <img src={menu} alt="Menu"  className="w-[60px] h-[60px] p-2 cursor-pointer pr-0 pt-0"/>
-            )}
+            {/* Mobile menu button (hamburger) */}
+            <div
+              onClick={handleMobileMenuToggle}
+            
+            >
+              {isMobileMenuOpen ? (
+                <img src={close} alt="Close"  className="w-[50px] h-[45px] p-2 cursor-pointer"/>
+              ) : (
+                <img src={menu} alt="Menu"  className="w-[60px] h-[60px] p-2 cursor-pointer pr-0 pt-0"/>
+              )}
+            </div>
           </div>
-        </div>
-   
+        </nav>
 
      
 
       {/* Mobile Menu */}
-    
+      <AnimatePresence>
       {isMobileMenuOpen && (
           <motion.aside
           initial={{ width: 0 }}
