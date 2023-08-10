@@ -50,10 +50,8 @@ function Navbar() {
       {/* Mobile Navbar */}
       
     <AnimatePresence>
-      <motion.aside 
-      
-      className="md:hidden flex justify-center pt-5 fixed z-10 w-[90vw] ">
-        <div className="nav-container flex justify-between w-[90%]">
+     
+        <div className="nav-container pt-5 flex justify-between w-[90%]">
           <div className="">
             <img src={logo} alt="Logo for page" className="" />
           </div>
@@ -70,7 +68,7 @@ function Navbar() {
             )}
           </div>
         </div>
-      </motion.aside>
+   
 
      
 
