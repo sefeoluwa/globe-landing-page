@@ -53,7 +53,7 @@ function Navbar() {
       <motion.aside 
       
       className="md:hidden flex justify-center pt-5 fixed z-10 w-[90vw] ">
-        <motion.div className="nav-container flex justify-between w-[90%]">
+        <div className="nav-container flex justify-between w-[90%]">
           <div className="">
             <img src={logo} alt="Logo for page" className="" />
           </div>
@@ -69,7 +69,7 @@ function Navbar() {
               <img src={menu} alt="Menu"  className="w-[60px] h-[60px] p-2 cursor-pointer pr-0 pt-0"/>
             )}
           </div>
-        </motion.div>
+        </div>
       </motion.aside>
 
      
