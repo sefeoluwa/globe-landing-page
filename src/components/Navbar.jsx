@@ -50,7 +50,7 @@ function Navbar() {
       {/* Mobile Navbar */}
       
     
-      <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] ">
+      <nav className="md:hidden flex justify-center fixed z-10 w-[90vw] h-[15vh] ">
         <div className="nav-container pt-5 flex justify-between w-[90%]">
             <div className="">
               <img src={logo} alt="Logo for page" className="" />
@@ -64,7 +64,9 @@ function Navbar() {
               {isMobileMenuOpen ? (
                 <img src={close} alt="Close"  className="w-[50px] h-[45px] p-2 cursor-pointer"/>
               ) : (
-                <img src={menu} alt="Menu"  className="w-[60px] h-[60px] p-2 cursor-pointer pr-0 pt-0"/>
+                <div className=" flex justify-center items-center h-[100%] pb-9">
+                  <img src={menu} alt="Menu"  className="w-[60px] h-[60px] p-2 cursor-pointer "/>
+                </div>
               )}
             </div>
           </div>
